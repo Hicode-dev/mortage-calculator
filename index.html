@@ -6,48 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <div class="bg-primary">
-        <div class="aff  text-white" style="padding: 1rem ;">
-            <h1 class="uppercase font-bold ">Affordability Calculator</h1>
+    <div class="bg-primary py-5">
+        <div class="aff  text-white px-4" style="padding: 1rem ;">
+            <h1 class="uppercase font-bold ">mortage Calculator</h1>
 
             <p class="font-mono " style="margin-top: 3rem;">Use Zillow's affordability calculator to estimate a
                 comfortable mortgage amount based on your current budget. Enter details about your income, down payment
                 and monthly debts to determine how much to spend on a house.</p>
         </div>
-        <div class="row bg-light mx-3 " style="box-shadow: 5px 8px 18px rgb(0, 0, 0);">
+        <div class="row bg-light mx-3 py-4 " style="box-shadow: 5px 8px 18px rgb(0, 0, 0);">
 
             <div class="d-block  px-5 py-3 col-sm-6">
+                <label for="">Annual income <span class="text-danger"><i class="fa-duotone fa-asterisk"></i></span></label>
                 <input class="form-control my-3" list="datalistOptions" id="exampleDataList"
-                    placeholder="Type to search...">
-                <datalist id="datalistOptions">
-                    <option value="San Francisco">
-                    <option value="New York">
-                    <option value="Seattle">
-                    <option value="Los Angeles">
-                    <option value="Chicago">
-                </datalist>
+                    placeholder="calculate">
+             
+                <label for="">monthly Income <span class="text-danger"><i class="fa-duotone fa-asterisk"></i></span></label>
                 <input class="form-control  my-3" list="datalistOptions" id="exampleDataList"
-                    placeholder="Type to search...">
-                <datalist id="datalistOptions">
-                    <option value="San Francisco">
-                    <option value="New York">
-                    <option value="Seattle">
-                    <option value="Los Angeles">
-                    <option value="Chicago">
-                </datalist>
+                    placeholder="calculate">
+             
+                <label for="">Down Payment <span class="text-danger"><i class="fa-duotone fa-asterisk"></i></span></label>
                 <input class="form-control  my-3" list="datalistOptions" id="exampleDataList"
-                    placeholder="Type to search...">
-                <datalist id="datalistOptions">
-                    <option value="San Francisco">
-                    <option value="New York">
-                    <option value="Seattle">
-                    <option value="Los Angeles">
-                    <option value="Chicago">
-                </datalist>
+                    placeholder="calculate">
+                    <h5 class="text-uppercase " id="hide-text">advance</h5>
+                    <div id="hide-div " class="hidden">
+                        <label for="">Annual income <span class="text-danger"><i class="fa-duotone fa-asterisk"></i></span></label>
+                        <input class="form-control my-3" list="datalistOptions" id="exampleDataList"
+                            placeholder="calculate">
+                     
+                        <label for="">monthly Income <span class="text-danger"><i class="fa-duotone fa-asterisk"></i></span></label>
+                        <input class="form-control  my-3" list="datalistOptions" id="exampleDataList"
+                            placeholder="calculate">
+                     
+                        <label for="">Down Payment <span class="text-danger"><i class="fa-duotone fa-asterisk"></i></span></label>
+                        <input class="form-control  my-3" list="datalistOptions" id="exampleDataList"
+                            placeholder="calculate">
+                    </div>
             </div>
+           
+         
 
             <div class="col-sm-6">
                 <nav class="d-flex justify-content-around border-bottom border-2 py-4 ">
@@ -79,6 +80,7 @@
     </div>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/06508f6fcc.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
