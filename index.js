@@ -1,10 +1,8 @@
 const HideDiv = document.getElementById('hide-div')
 const HideText = document.getElementById('hide-text')
 
-function HandleHide(params) {
-    HideDiv.classList.toggle("hidden")
-}
+console.log('ekwhndefub');
 
-HideDiv.addEventListener('click',HandleHide)
-
-
+HideText.addEventListener("click", () => {
+    HideDiv.classList.toggle("hidden");
+  });
